@@ -1,0 +1,53 @@
+{
+  "name": "dsh-chat-import",
+  "version": "0.1.0",
+  "description": "DSH 插件：把 chat.deepseek.com 导出的对话读进右侧栏——列表、搜索、问与答，思考过程单独一栏、可折叠。 / Browse conversations exported from chat.deepseek.com inside the DSH right sidebar.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "install.ps1",
+    "README.md"
+  ],
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "chat-import",
+    "export",
+    "thinking"
+  ],
+  "license": "MIT",
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-renderer",
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar-right"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "*",
+    "@deepseek-ai/dsh-tools": "*"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "author": "silversystem04-coder",
+  "homepage": "https://github.com/silversystem04-coder/dsh-chat-import#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silversystem04-coder/dsh-chat-import.git"
+  },
+  "bugs": {
+    "url": "https://github.com/silversystem04-coder/dsh-chat-import/issues"
+  }
+}
