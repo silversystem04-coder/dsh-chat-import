@@ -5,6 +5,8 @@
 
 只读。不改导出的文件，不联网，不写库。
 
+![右侧栏：列表与详情](https://raw.githubusercontent.com/silversystem04-coder/dsh-chat-import/main/preview.png)
+
 ---
 
 ## 它解决什么
